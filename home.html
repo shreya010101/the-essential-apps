@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="nav.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f5f9;
+    }
+    .hero-section {
+      background-image: url('hero.jpg');
+      background-size: cover;
+      color: #fff;
+      padding: 200px 0;
+      text-align: center;
+    }
+    .services-section {
+      background-color: #fff;
+      padding: 80px 0;
+    }
+    .service-card {
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+    }
+    .service-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+    .contact-section {
+      background-color: #f0f5f9;
+      padding: 100px 0;
+    }
+    .blogs-section {
+      background-color: #fff;
+      padding: 80px 0;
+    }
+    .blog-card {
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+    }
+    .blog-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+    }
+
+  </style>
+</head>
+<body>
+       <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top white-bg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="The EssentialApps.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tools
+            </a>
+            <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="ageCalculator/agecal.html" target="_blank">Age Calculator</a></li>
+              <li><a class="dropdown-item" href="basic-calculator/basiccal.html" target="_blank">Basic Calculator</a></li>
+              <li><a class="dropdown-item" href="note-app/notes.html" target="_blank">Notes</a></li>
+              <li><a class="dropdown-item" href="stopwatch/stopwatch.html" target="_blank">Stopwatch</a></li>
+              <li><a class="dropdown-item" href="to-do-list/todo.html" target="_blank">To Do List</a></li>
+              <li><a class="dropdown-item" href="digital-clock/digitalclock.html" target="_blank">Digital Clock</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-sec">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to The Essential Apps</h1>
+      <p>Discover amazing business tools, services and insightful blogs.</p>
+      <a href="#services-sec" class="btn btn-primary">Explore Tools</a>
+      <a href="#blogs-sec" class="btn btn-secondary">Read Blogs</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services-sec">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore Tools</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="ageCalculator/agecal.html" target="_blank">Age Calculator</a></h5>
+              <p class="card-text">Easily determine your age in years, months, and days with our Age Calculator. Simply input your birthdate, and our tool will quickly calculate your exact age. Perfect for milestone celebrations, retirement planning, and keeping track of family members' ages.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+                <h5 class="card-title"><a href="basic-calculator/basiccal.html" target="_blank">Basic Calculator</a></h5>
+              <p class="card-text">Perform everyday mathematical calculations effortlessly with our Basic Calculator. Whether you need to add, subtract, multiply, or divide, this intuitive tool provides quick and accurate results. Ideal for students, professionals, and anyone needing a reliable calculation tool.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+                <h5 class="card-title"><a href="note-app/notes.html" target="_blank">Notes</a></h5>
+              <p class="card-text">Keep your thoughts organized with our Notes tool. Create, edit, and save notes conveniently in one place. Whether you’re jotting down ideas, making lists, or keeping track of important information, our Notes tool ensures you’ll never miss a detail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="stopwatch/stopwatch.html" target="_blank">Stopwatch</a></h5>
+              <p class="card-text">Measure time with precision using our Stopwatch tool. Ideal for sports, fitness, cooking, or any activity requiring accurate time tracking. Start, stop, and reset with ease, and record lap times to monitor your progress.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+                <h5 class="card-title"><a href="to-do-list/todo.html" target="_blank">To Do List</a></h5>
+              <p class="card-text">Stay organized and boost productivity with our To Do List tool. Create tasks, set priorities, and track your progress. Whether for work, school, or personal projects, this tool helps you manage your responsibilities and achieve your goals efficiently.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card">
+            <div class="card-body">
+                <h5 class="card-title"><a href="digital-clock/digitalclock.html" target="_blank">Digital Clock</a></h5>
+              <p class="card-text">Keep track of the time with our Digital Clock. Featuring a clear and easy-to-read display, it shows the current time in hours, minutes, and seconds. Customize the clock to fit your preferences and stay punctual throughout the day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section" id="contact-sec">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section class="blogs-section" id="blogs-sec">
+    <div class="container">
+      <h2 class="text-center mb-4">Latest Blogs</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="https://media.istockphoto.com/id/1335050732/photo/businessman-using-a-computer-to-document-management-concept-online-documentation-database-and.jpg?s=612x612&w=0&k=20&c=5zAzuOclaBXMudc56RisW9yNyGxLt3wO8Xh2wtShmo0=" class="card-img-top" alt="Blog Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Blog Title 1</h5>
+              <p class="card-text">Description of Blog 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="https://media.istockphoto.com/id/1347264285/photo/businessman-using-tablet-and-touching-on-document-icon-for-approve-and-online-document-concept.jpg?s=612x612&w=0&k=20&c=z6sCaBE-93h6nhachBOxZJ8KUDuo5Ya9oQsAb2rWlM8=" class="card-img-top" alt="Blog Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Blog Title 2</h5>
+              <p class="card-text">Description of Blog 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card">
+            <img src="https://media.istockphoto.com/id/1479317032/photo/human-resources-management-hr-employee-engagement-and-development-recruitment-employee-and.jpg?s=612x612&w=0&k=20&c=vKRjojbuyLVWp61AXog5woDZUBVo0eiYBWSMX1D4t1E=" class="card-img-top" alt="Blog Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Blog Title 3</h5>
+              <p class="card-text">Description of Blog 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <script>
+    // Change navbar background color on scroll
+    window.addEventListener('scroll', function() {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('white-bg');
+      } else {
+        navbar.classList.remove('white-bg');
+      }
+    });
+  </script> -->
+
+</body>
+</html>
